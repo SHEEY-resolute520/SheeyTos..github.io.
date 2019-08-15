@@ -14,7 +14,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;   
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(/images/救世者桌布.jpg);
+    background-image: url("/images/救世者桌布.jpg");
     margin-bottom: 100px;
     line-height: 1.5;
     
