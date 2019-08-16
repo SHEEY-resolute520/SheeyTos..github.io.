@@ -150,7 +150,7 @@ ul li {
 
 
 /*** Style the main ***/
-.container{
+.container,.about-container,.pg-container{
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
@@ -190,10 +190,10 @@ ul li {
 
 
 
-.newslist-title,.guide-title,.tool-title,.log-title {
+.newslist-title,.guide-title,.tool-title,.log-title,.page-title {
     padding-left: 15px;
 }
-.newslist-title,.gameinfo-title,.guide-title ,.tool-title,.log-title{
+.newslist-title,.gameinfo-title,.guide-title ,.tool-title,.log-title,.page-title{
     font-size: 1.3em;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -340,15 +340,6 @@ ul li {
     
 }
 
-
-
-
-
-
-
-
-
-
 .guide-item:hover {
     transform: scale(1.2);       
 }
@@ -357,11 +348,7 @@ ul li {
     color: #3F7FBF;
 }
 
-
-
-
-
- .gameinfo{
+.gameinfo{
     border: #1A8E1A solid 2px;
     border-radius: 5px;
     background-color: antiquewhite;
@@ -376,12 +363,6 @@ b {
     color:#015249;
 }
 
-
-
-
-
-
-
 .news-block {
     border: #1A8E1A solid 2px;
     border-radius: 5px;
@@ -392,13 +373,24 @@ b {
     display: none;
 }
 
+.page {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 20px 0;
+}
 
+.page-box {
+    border: #1A8E1A solid 2px;
+    border-radius: 5px;
+    background-color: hsla(0,0%,100%,1);
+    padding: 20px;
+    margin-bottom: 10px;
+}
 
-
-
-
-
-
+.page-box > p {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
 
 
 
@@ -727,7 +719,15 @@ b {
 @media (min-width: 1240px) {
     .container {
         max-width: 1480px;
-    }  
+    }
+
+    .pg-container {
+        max-width: 1280px;
+    }
+    
+    .about-container {
+        max-width: 1080px;
+    }
     
     .ul li {
         display: blcok;
